@@ -1,0 +1,799 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Registration/Login Page Starts */
+
+.bodyImg {
+  background-image: url("https://wallpapercave.com/wp/wp7642267.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  background-position: bottom;
+}
+.bodyImg h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.black-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+}
+.logregContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.regForm {
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  gap: 10px;
+  width: 450px;
+  align-items: center;
+  background: transparent;
+  border-radius: 10px;
+  padding: 10px 0;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.regForm .inputDiv {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.regForm label {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 5px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.regForm input {
+  border-style: solid;
+  border-color: #fff;
+  border-top-width: 0;
+  border-bottom-width: 2px;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 0;
+  background: none;
+  outline: none;
+  color: white;
+}
+.inputDiv input:focus + label,
+.inputDiv input:not(:placeholder-shown) + label {
+  transform: translateY(-20px);
+  font-size: 16px;
+  color: #fff;
+}
+
+.regForm .regBtn input[type="submit"] {
+  background-color: #007bff;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+.regForm a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Registration/Login Page  Ends */
+
+/* Header Starts */
+header {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  /* color: #0B192C; */
+  color: #fff;
+}
+.active {
+  background-color: #6e8e59;
+}
+ul li a:hover {
+  background-color: #007bff;
+}
+
+.menuBarIcon {
+  display: none;
+  color: white;
+}
+.crossBarIcon {
+  display: none;
+  color: white;
+}
+
+/* Header Ends */
+
+/* Home Page Starts */
+
+.homeContainer {
+  background-image: url("https://wallpapercave.com/wp/wp9185615.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10%;
+  width: 100%;
+  height: 100vh;
+}
+.ticketBooking {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50vw;
+  color: white;
+}
+.adminLogin {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50vw;
+  color: white;
+}
+.ticketBooking .ticketBtn {
+  /* background-color: #f1efec; */
+  background-color: #6e8e59;
+  padding: 10px 50px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+}
+.ticketBooking .ticketBtn:hover {
+  background-color: #007bff;
+}
+.adminLogin .adminBtn {
+  background-color: #6e8e59;
+  padding: 10px 60px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  margin-bottom: 20px;
+}
+.adminLogin .adminBtn:hover {
+  background-color: #007bff;
+}
+.adminForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.adminForm .inputDivs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+.inputDivs input {
+  width: 100%;
+  padding: 5px 2px;
+  border: none;
+  outline: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #00796b;
+  background: transparent;
+  color: white;
+  transition: all 0.3s ease;
+}
+.inputDivs label {
+  position: absolute;
+  left: 0;
+  color: white;
+  pointer-events: none;
+}
+.inputDivs input:focus + label {
+  transform: translateY(-20px);
+  font-size: 14px;
+}
+.inputDivs.filled label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  /* color: #007bff; */
+}
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.ticket-box {
+  position: absolute;
+  top: 22%;
+  width: 50vw;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 15%;
+}
+.ticketBooking .ticketInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+}
+.ticketInput label {
+  font-size: 16px;
+}
+.ticketInput input {
+  width: 300px;
+  font-size: 16px;
+  border-top: 0;
+  border-left: 0;
+  border-radius: 0;
+  border-bottom: 3px solid #00796b;
+  padding: 2px 1px;
+}
+.ticketInput select {
+  width: 300px;
+  font-size: 16px;
+  border-top: 0;
+  border-left: 0;
+  border-radius: 0;
+  border-bottom: 3px solid #00796b;
+  padding: 2px 1px;
+  outline: none;
+}
+.nxtBtn button {
+  padding: 5px 30px;
+  background-color: #f1efec;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.nxtBtn button:hover {
+  background-color: #007bff;
+  color: white;
+}
+.adminBtns input[type="submit"] {
+  background-color: #f1efec;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+.adminBtns input[type="submit"]:hover {
+  background-color: #007bff;
+}
+/* Home Page Ends */
+
+/* Customer Page Starts */
+
+.custContainer {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.custContainer h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.custContainer .custForm {
+  border: 2px solid #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 400px;
+  width: 500px;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+.custForm .custData {
+  position: relative;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.custData input {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  padding: 6px 5px;
+  background: transparent;
+  border-bottom: 2px solid white;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  transition: all 0.3s ease;
+  color: white;
+}
+.custData label {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  color: white;
+}
+.custData input:focus + label,
+.custData input:not(:placeholder-shown) + label {
+  transform: translateY(-20px);
+  /* background-color: #1cc2a7; */
+  background-color: #134f45;
+  color: white;
+  padding: 2px 3px;
+  font-size: 14px;
+}
+.custData p {
+  color: red;
+  font-size: 15px;
+}
+.custData .custIcon {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  /* left: 5px; */
+  z-index: 10;
+  color: white;
+}
+.custContainer input[type="submit"] {
+  background-color: #f1efec;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+.custContainer input[type="submit"]:hover {
+  background-color: #007bff;
+}
+
+/* Customer Page Ends */
+
+/* Customer Receipt Starts */
+
+.ticketInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://wallpapercave.com/wp/wp7636776.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+.ticketInfo h1 {
+  color: white;
+  margin-top: 30px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.ticketInfo .ticketCard {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  height: auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.ticketCard img {
+  width: 100%;
+  border-radius: 20px;
+  border: 10px solid rgb(103 103 103);
+  padding: 5px;
+}
+.ticketCard .ticketData {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  place-items: left;
+  align-items: center;
+  border: 2px solid black;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.ticketData h4,
+.ticketData p {
+  font-size: 18px;
+  color: white;
+}
+.recBtn button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8ab2a6;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.recBtn button:hover {
+  background-color: #007bff;
+}
+
+/* Customer Receipt Ends */
+
+/* Print Reciept Starts */
+.printContainer {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.white-box {
+  width: 650px;
+  background-color: #FBFBFB;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 8px;
+}
+.grayBorder {
+  border: 2px solid gray;
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+.icContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.icContainer p {
+  color: rgb(125, 123, 123);
+}
+.billTo h4 {
+  margin-bottom: 10px;
+}
+.tableContainer {
+  margin-top: 20px;
+}
+.billTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+.billTable th {
+  border: 2px solid #123458;
+  background-color: #e6f2f1;
+  color: #333333;
+}
+.billTable tr,
+td {
+  border: 2px solid #123458;
+}
+.totamtContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 20px;
+}
+.totamtContainer .amtValues {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+.downdBtn {
+  margin-top: 20px;
+  text-align: center;
+}
+.downdBtn button {
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+.downdBtn button:hover {
+  background-color: #007bff;
+  color: white;
+}
+/* Print Reciept Ends */
+
+/* Routes Section Starts*/
+.routesTable {
+  border: 2px solid;
+  margin-top: 70px;
+}
+.routesTable table {
+  border-collapse: collapse;
+  border: 2px solid;
+  width: 100%;
+}
+.routesTable table th {
+  border: 2px solid #123458;
+  background-color: #e6f2f1;
+  color: #333333;
+}
+.routesTable table td {
+  border: 2px solid #123458;
+  background-color: #ffffff;
+}
+
+/* Routes Section Ends */
+
+/* Contact Us Page Starts */
+
+.contact-container {
+  max-width: 600px;
+  margin: 70px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.contact-heading,
+.contact-subheading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-description {
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.contact-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contact-team-member {
+  flex: 1 1 30%;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #125ea4;
+}
+
+/* Contact Us Page Ends */
+
+@media screen and (max-width: 768px) {
+  .logregContainer {
+    height: 600px;
+  }
+  .regForm .inputDiv {
+    width: 40vw;
+  }
+  /* Header with MenuBar Icon and CrossBar Icon */
+  header {
+    padding: 10px 30px;
+    z-index: 10;
+  }
+  .menuBarIcon {
+    display: block;
+  }
+  .crossBarIcon {
+    display: block;
+    position: absolute;
+    right: 10px;
+    z-index: 100;
+  }
+  .show-menu {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    width: 200px;
+    height: 500px;
+    z-index: 10;
+  }
+  .hide-menu {
+    display: none;
+  }
+  /* Header with MenuBar Icon and CrossBar Icon */
+
+  /* Home Section Starts */
+  .ticket-box {
+    right: 25%;
+    height: 370px;
+  }
+  .ticketBooking {
+    top: 25%;
+    right: 0;
+    width: 100vw;
+    gap: 15px;
+  }
+  .ticketInput select {
+    width: 35vw;
+  }
+  .ticketInput input {
+    width: 35vw;
+  }
+  .adminLogin {
+    width: 100vw;
+    right: 0;
+  }
+  .adminForm .inputDivs {
+    width: 40vw;
+    justify-content: space-between;
+  }
+  /* Home Section Ends */
+  /* CustInfo Section Starts: */
+  .custContainer {
+    height: 600px;
+  }
+  .custContainer .custForm {
+    margin-top: 0;
+  }
+  .custForm .custData {
+    width: 50vw;
+  }
+  .custData input {
+    width: 100%;
+  }
+  /* CustInfo Section Ends: */
+
+  /* Customer Receipt Starts */
+
+  .ticketInfo .ticketCard {
+    width: 55vw;
+  }
+  /* Customer Receipt Ends */
+  
+  .printContainer{
+    height: auto;
+  }
+  .billTable {
+    max-width: 100%;
+  }
+  /* Contact Us Page Starts */
+  .container {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-grid .contact-item {
+    min-width: 100%;
+  }
+  /* Contact Us Page Ends */
+}
+
+@media screen and (max-width: 426px) {
+  .bodyImg {
+    background-position: left;
+  }
+  .regForm {
+    width: 90%;
+  }
+  .regForm .inputDiv {
+    width: 70vw;
+  }
+  .ticket-box {
+    right: 0;
+    width: 100vw;
+  }
+  .totamtContainer .amtValues {
+    width: 50vw;
+  }
+  .white-box {
+    width: 100%;
+    min-width: 100%;
+    padding: 20px 0;
+  }
+  .grayBorder {
+    padding: 20px 0;
+  }
+  .ticketInput select {
+    width: 70vw;
+  }
+  .ticketInput input {
+    width: 70vw;
+  }
+  .adminForm .inputDivs {
+    width: 75vw;
+  }
+  .custContainer .custForm {
+    width: 95%;
+  }
+  .custForm .custData {
+    width: 90vw;
+  }
+  .custData input {
+    width: 100%;
+  }
+  .icContainer h2{
+    font-size: 18px;
+  }
+  .ticketInfo .ticketCard {
+    width: 100vw;
+  }
+  .ticketData h4,
+  p {
+    font-size: 14px;
+  }
+  .billTable tr,
+  td {
+    font-size: 12px;
+  }
+  .billTable th {
+    font-size: 12px;
+  }
+}

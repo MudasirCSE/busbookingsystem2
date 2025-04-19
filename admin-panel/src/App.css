@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* CSS For Content.jsx */
+.adminLogo {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+.adminName {
+  display: flex;
+  gap: 30px;
+}
+.adminBanner {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: #f1efec;
+  margin: 0px 0;
+  padding: 5px 10px;
+}
+.dashboardBtn img {
+  width: 50px;
+  height: 50px;
+}
+.busBtn img {
+  width: 80px;
+  height: 50px;
+}
+.seatBtn img {
+  width: 50px;
+  height: 50px;
+}
+.dashboardBtn button {
+  border: none;
+  padding: 10px 10px;
+  background-color: #f1efec08;
+  cursor: pointer;
+}
+.dashboardBtn button:hover {
+  background-color: #437dcf;
+}
+.dashboardBtn a {
+  text-decoration: none;
+  color: rgb(10, 10, 38);
+}
+.busBtn button {
+  border: none;
+  padding: 10px 10px;
+  background-color: #f1efec08;
+  cursor: pointer;
+}
+.busBtn button:hover {
+  background-color: #437dcf;
+}
+.busBtn a,
+a:visited {
+  text-decoration: none;
+  color: rgb(10, 10, 38);
+}
+.seatBtn button {
+  border: none;
+  padding: 10px 10px;
+  background-color: #f1efec08;
+  cursor: pointer;
+}
+.seatBtn button:hover {
+  background-color: #437dcf;
+}
+.seatBtn a {
+  text-decoration: none;
+  color: rgb(10, 10, 38);
+}
+button.active {
+  background-color: #00b894;
+}
+
+/* CSS For Dashboard */
+
+.dashTable tbody tr:nth-child(even) {
+  background-color: #87cefa;
+}
+.dashTable table {
+  border-collapse: collapse;
+  border: 2px solid lime;
+  min-width: 100%;
+  min-height: 100%;
+}
+.dashTable table th {
+  border: 2px solid #123458;
+  background-color: #e6f2f1;
+  color: #333333;
+  font-size: 18px;
+}
+.dashTable table td {
+  border: 2px solid #123458;
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 5px;
+}
+.editDeleteBtn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.editDeleteBtn a {
+  font-size: 18px;
+}
+
+/* Edit Information Of Customer */
+
+.editContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+}
+.editContainer h2 {
+  margin: 20px 0;
+}
+.editContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  align-items: center;
+  font-size: 18px;
+}
+.inputDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.inputDiv input {
+  width: 130px;
+}
+.inputDiv select {
+  width: 130px;
+}
+.editContainer form input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #a0c878;
+  border: none;
+  cursor: pointer;
+}
+.editContainer form input[type="submit"]:hover {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+/* Add Bus Button */
+.addBtn {
+  display: flex;
+  justify-content: center;
+}
+.addBtn button {
+  padding: 10px 20px;
+  background-color: #75787b;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  cursor: pointer;
+}
+.addBtn button:hover {
+  background-color: #123458;
+}
+.addBusBtn {
+  padding: 10px 20px;
+  background-color: #75787b;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  cursor: pointer;
+}
+.addBusBtn:hover {
+  background-color: #123458;
+}
+
+/* For Mobile Devices */
+
+@media screen and (max-width: 768px) {
+  .dashTable {
+    overflow-x: auto;
+  }
+  .dashTable table th {
+    font-size: 17px;
+    /* min-width: 20px; */
+  }
+  .dashTable table td {
+    font-size: 17px;
+    min-width: 30vw;
+    padding: 5px;
+  }
+  .editContainer form {
+    width: 300px;
+    gap: 15px;
+  }
+}
