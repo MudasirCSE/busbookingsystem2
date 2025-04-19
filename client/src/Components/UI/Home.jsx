@@ -87,6 +87,10 @@ const Home = () => {
         formData
       );
       const data = res.data;
+      if (!data.success) {
+        alert(data.message || "Login failed");
+        return;
+      }
       localStorage.setItem("adminId", data.adminId);
       localStorage.setItem("adminToken", data.adminToken);
       alert("Admin Login Successfully");
