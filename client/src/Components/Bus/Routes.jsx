@@ -1,16 +1,16 @@
 import { React, useEffect, useState } from "react";
 import axios from "axios";
+import { useContext } from "react";
+import { AppContent } from "../Context/Context";
 
 const Routes = () => {
   const [buses, setBuses] = useState([]);
-
+  const { backendURL } = useContext(AppContent);
   // Get Bus:
   useEffect(() => {
     const getBus = async () => {
       try {
-        const res = await axios.get(
-          "http://localhost:5000/api/buses/api/buses"
-        );
+        const res = await axios.get(backendURL + "api/buses/api/buses");
         setBuses(res.data);
       } catch (error) {
         console.log(error.message);
