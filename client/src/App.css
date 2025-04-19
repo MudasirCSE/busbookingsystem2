@@ -632,6 +632,7 @@ td {
 @media screen and (max-width: 768px) {
   .logregContainer {
     height: 600px;
+    min-height: 800px;
   }
   .regForm .inputDiv {
     width: 40vw;
@@ -656,8 +657,8 @@ td {
     right: 0;
     top: 0;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
-    width: 200px;
-    height: 500px;
+    min-width: 250px;
+    min-height: 800px;
     z-index: 10;
   }
   .hide-menu {
@@ -668,7 +669,8 @@ td {
   /* Home Section Starts */
   .ticket-box {
     right: 25%;
-    height: 370px;
+    height: 400px;
+    max-height: 500px;
   }
   .ticketBooking {
     top: 25%;
@@ -693,7 +695,7 @@ td {
   /* Home Section Ends */
   /* CustInfo Section Starts: */
   .custContainer {
-    height: 600px;
+    min-height: 700px;
   }
   .custContainer .custForm {
     margin-top: 0;
@@ -714,7 +716,7 @@ td {
   /* Customer Receipt Ends */
   
   .printContainer{
-    height: auto;
+    min-height: 700px;
   }
   .billTable {
     max-width: 100%;
